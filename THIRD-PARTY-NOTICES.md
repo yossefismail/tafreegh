@@ -1,7 +1,7 @@
 # Third-party notices
 
-Tafreegh itself is licensed under the MIT License.
-Copyright 2026 Yossef Ismail. See `LICENSE`.
+Tafreegh itself is licensed under the GNU Affero General Public License v3.0
+(AGPL-3.0). Copyright (C) 2026 Yossef Ismail. See `LICENSE`.
 
 This file lists the third-party components that ship inside the installers, and
 the models and packages that the app downloads at first run. Each component stays

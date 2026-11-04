@@ -143,8 +143,8 @@ Download the latest release from [releases/latest](../../releases/latest).
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,083,669 B | `4E5E4460B5394D3E82D079C35308A816CB93686187F8190C09426A16205F0D10` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,436,544 B | `D3C39F6D682524AE34C664CFFFB0A6A762FB539D9E00028AE903ACDACB769B55` |
+| `Tafreegh-0.9.9-setup-x64.exe` | 124,094,384 B | `25E49EA1B9738F63095A21B772BB3B2AB9E4CCFE0AE90EB26007D0FD2058A221` |
+| `Tafreegh-0.9.9-setup-x64.msi` | 131,457,024 B | `C35E836B47F5FC7960005CF7B2A3CCADAC25F0B5D8B589511172300C31813B4D` |
 
 The install is per-user and needs no administrator rights. The installer is unsigned: if SmartScreen shows "Windows protected your PC", choose More info, then Run anyway.
 
@@ -228,8 +228,12 @@ Tests: the backend uses pytest, the renderer and main process use Vitest, and en
 
 ## License
 
-MIT, copyright 2026 Yossef Ismail. See [LICENSE](LICENSE).
+GNU AGPL-3.0, copyright (C) 2026 Yossef Ismail. See [LICENSE](LICENSE).
 
-You can use it commercially, change it, and redistribute it, including a closed-source fork, as long as the copyright notice and permission notice stay with it. There is no warranty, and the accuracy disclaimer above is part of using it.
+You can use it commercially, change it, and redistribute it. The condition is copyleft: if you distribute a modified version, or run a modified version as a network service that other people use, you must make the complete corresponding source available under the same licence. Redistributing an unmodified build only needs this repository and its notices.
+
+AGPL rather than GPL because of that network clause: wrapping Tafreegh in a web service does not let you keep the changes private. Unlike a non-commercial licence, it does not stop anyone from selling the app; it stops them from selling a closed version.
+
+There is no warranty, and the accuracy disclaimer above is part of using it.
 
 The bundled models keep their own licences, and Tafreegh does not redistribute them: Jais-ASR is Apache 2.0 ([model card](https://huggingface.co/IFM/Jais-ASR-GGUF)) and Nemotron-3 Diarization is OpenMDW 1.1 ([model card](https://huggingface.co/nvidia/Nemotron-3-Diarization)). The fonts and llama.cpp are covered in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), and the licence files ship inside the installed app under `resources/`.

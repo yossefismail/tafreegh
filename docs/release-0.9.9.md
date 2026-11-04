@@ -28,8 +28,8 @@ The installers are unsigned. Windows SmartScreen will warn on first launch: choo
 ## Verify
 
 ```
-4E5E4460B5394D3E82D079C35308A816CB93686187F8190C09426A16205F0D10  Tafreegh-0.9.9-setup-x64.exe
-D3C39F6D682524AE34C664CFFFB0A6A762FB539D9E00028AE903ACDACB769B55  Tafreegh-0.9.9-setup-x64.msi
+25E49EA1B9738F63095A21B772BB3B2AB9E4CCFE0AE90EB26007D0FD2058A221  Tafreegh-0.9.9-setup-x64.exe
+C35E836B47F5FC7960005CF7B2A3CCADAC25F0B5D8B589511172300C31813B4D  Tafreegh-0.9.9-setup-x64.msi
 ```
 
 Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SHA256` in PowerShell.
@@ -49,7 +49,7 @@ Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SH
 
 ## Licence
 
-MIT, copyright 2026 Yossef Ismail. Commercial use, modification and redistribution are allowed under the usual MIT terms, with no warranty.
+GNU AGPL-3.0, copyright (C) 2026 Yossef Ismail. Free to use, modify and redistribute, including commercially. If you distribute a modified build, or host one for other people to use, you must publish the corresponding source under the same licence.
 
 The licence and the third-party notices ship inside the app: `resources\LICENSE.txt`, `resources\THIRD-PARTY-NOTICES.txt`, and `resources\licenses\`.
 
