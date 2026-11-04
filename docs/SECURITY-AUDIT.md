@@ -1,4 +1,4 @@
-# Security audit: v0.9.9 release preparation
+# Security audit: v0.9.10 release preparation
 
 Date: 2026-11-04. Scope: every file `git add -A` would stage, plus
 `dist/win-unpacked/resources/app.asar` and the rest of `dist/win-unpacked/resources/`.

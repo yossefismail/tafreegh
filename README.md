@@ -2,7 +2,7 @@
 
 **English** · [العربية](README.ar.md)
 
-Tafreegh (تفريغ) is a packaged Windows desktop app that turns Arabic recordings into a speaker-labelled transcript plus an AI summary, and publishes the result as one self-contained HTML page. It is built with Electron 45, React 19 and TypeScript, with a Python 3.12 worker for the audio pipeline. It is not a web app: there is no Docker, no localhost server and no browser step, because the result is shown in a sandboxed iframe inside the app. Installers are an MSI and an NSIS EXE for x64, version 0.9.9. They are unsigned, so Windows SmartScreen warns on first launch.
+Tafreegh (تفريغ) is a packaged Windows desktop app that turns Arabic recordings into a speaker-labelled transcript plus an AI summary, and publishes the result as one self-contained HTML page. It is built with Electron 45, React 19 and TypeScript, with a Python 3.12 worker for the audio pipeline. It is not a web app: there is no Docker, no localhost server and no browser step, because the result is shown in a sandboxed iframe inside the app. Installers are an MSI and an NSIS EXE for x64, version 0.9.10. They are unsigned, so Windows SmartScreen warns on first launch.
 
 ## Accuracy and use
 
@@ -143,8 +143,8 @@ Download the latest release from [releases/latest](../../releases/latest).
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,094,838 B | `AFD233BE871EAFABFDA95FA3BED320C3EAAD9C8D3747AE3CB55E95C1C103CB1D` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,465,216 B | `B443D18C41942C1559B90EDD27CBC244B97B9C1CA3B90862B4709B50EB1EB14C` |
+| `Tafreegh-0.9.10-setup-x64.exe` | 124,094,729 B | `76450BC68DB34B7B33322E0CA90A988E8FE16DAF3C7FF105BE382A44C03BE209` |
+| `Tafreegh-0.9.10-setup-x64.msi` | 131,481,600 B | `A268648FA05F36D5F56A7D7BC46A00FE0E192664277593C8E3DC4C5342429E75` |
 
 The install is per-user and needs no administrator rights. The installer is unsigned: if SmartScreen shows "Windows protected your PC", choose More info, then Run anyway.
 
