@@ -1,0 +1,12 @@
+# Installed into the app-managed virtual environment on first run.
+# Deliberately torch-free: enhancement is spectral (noisereduce + EQ), and
+# Jais-ASR itself runs through the bundled llama.cpp server, so no model-loading
+# stack is needed here.
+soundfile>=0.12
+imageio-ffmpeg>=0.5
+huggingface-hub>=0.34,<1.0
+noisereduce>=3.0
+scipy>=1.13
+numpy>=2.0
+protobuf>=5.27
+tabulate>=0.9

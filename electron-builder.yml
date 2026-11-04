@@ -1,0 +1,63 @@
+appId: com.tafreegh.app
+productName: Tafreegh
+copyright: Copyright © 2026 Tafreegh
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - package.json
+  - '!**/*.map'
+extraResources:
+  - from: backend
+    to: backend
+    filter:
+      - '**/*'
+      - '!**/__pycache__/**'
+      - '!**/*.pyc'
+      - '!**/.pytest_cache/**'
+      - '!**/tests/**'
+  # llama.cpp runtime for the GGUF build of Jais-ASR (see services/engine.ts).
+  - from: resources/llama
+    to: llama
+    filter:
+      - '**/*'
+asar: true
+compression: maximum
+win:
+  icon: build/icon.ico
+  # Ship only the locales the app can actually speak: Arabic and English.
+  # (Chromium's default locale pack is 55 files / 48.8 MB.)
+  electronLanguages:
+    - ar
+    - en-US
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: msi
+      arch:
+        - x64
+  artifactName: ${productName}-${version}-setup-${arch}.${ext}
+  requestedExecutionLevel: asInvoker
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Tafreegh
+  uninstallDisplayName: Tafreegh
+  deleteAppDataOnUninstall: false
+msi:
+  oneClick: false
+  perMachine: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Tafreegh
+  runAfterFinish: true
+# Adds the "%LOCALAPPDATA%\Tafreegh" cleanup action to the generated WiX
+# source; the MSI target has no built-in delete-app-data option.
+msiProjectCreated: ./scripts/msi-cleanup.cjs
+publish: null

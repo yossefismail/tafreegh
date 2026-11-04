@@ -1,0 +1,46 @@
+{
+  "name": "tafreegh",
+  "productName": "Tafreegh",
+  "version": "0.9.9",
+  "description": "Tafreegh â€” Arabic voice-to-text studio with speaker diarization and AI summaries.",
+  "author": "Tafreegh",
+  "license": "MIT",
+  "private": true,
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npm run build && playwright test",
+    "dist": "npm run build && electron-builder --win",
+    "dist:nsis": "npm run build && electron-builder --win nsis",
+    "dist:msi": "npm run build && electron-builder --win msi",
+    "backend:test": "python -m pytest backend/tests -q"
+  },
+  "dependencies": {
+    "extract-zip": "^2.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.2.1",
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "jsdom": "^28.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0",
+    "zustand": "^5.0.16"
+  }
+}

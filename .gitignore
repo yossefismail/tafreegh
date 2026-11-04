@@ -1,0 +1,33 @@
+node_modules/
+out/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.pytest_cache/
+test-results/
+playwright-report/
+backend/runtime/
+backend/models/
+*.tsbuildinfo
+
+# local test / run data
+.e2edata/
+backend/assets/tmp/
+
+# editor and OS state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# secrets and certificates
+secrets.json
+/settings.json
+*.pem
+*.pfx
+*.key
+*.p12
