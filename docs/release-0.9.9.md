@@ -28,8 +28,8 @@ The installers are unsigned. Windows SmartScreen will warn on first launch: choo
 ## Verify
 
 ```
-87C5F8A1CB30AB0D2A4150F10D02172DE5C0EE97591B18DD308AAB97DAC547BC  Tafreegh-0.9.9-setup-x64.exe
-4383779F60E93FE6877310895A6EF383318A6D84A5ABE4D1072A754FDE5FC005  Tafreegh-0.9.9-setup-x64.msi
+4E5E4460B5394D3E82D079C35308A816CB93686187F8190C09426A16205F0D10  Tafreegh-0.9.9-setup-x64.exe
+D3C39F6D682524AE34C664CFFFB0A6A762FB539D9E00028AE903ACDACB769B55  Tafreegh-0.9.9-setup-x64.msi
 ```
 
 Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SHA256` in PowerShell.
@@ -49,6 +49,10 @@ Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SH
 
 ## Licence
 
-Source-available under the **PolyForm Noncommercial License 1.0.0**, copyright 2026 Yossef Ismail. Personal, research, educational and other noncommercial use is free, and you may modify and share it under the same terms. Commercial use needs a separate licence.
+MIT, copyright 2026 Yossef Ismail. Commercial use, modification and redistribution are allowed under the usual MIT terms, with no warranty.
 
-The licence and the third-party notices now ship inside the app: `resources\LICENSE.txt`, `resources\THIRD-PARTY-NOTICES.txt`, and `resources\licenses\`.
+The licence and the third-party notices ship inside the app: `resources\LICENSE.txt`, `resources\THIRD-PARTY-NOTICES.txt`, and `resources\licenses\`.
+
+## Accuracy
+
+Transcripts and speaker labels are generated automatically and can contain errors. Tafreegh is an assistance tool, not a legally binding or certified record: check anything that matters against the original audio.

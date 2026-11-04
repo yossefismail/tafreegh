@@ -1,6 +1,6 @@
 # Third-party notices
 
-Tafreegh itself is licensed under the PolyForm Noncommercial License 1.0.0.
+Tafreegh itself is licensed under the MIT License.
 Copyright 2026 Yossef Ismail. See `LICENSE`.
 
 This file lists the third-party components that ship inside the installers, and
@@ -34,10 +34,3 @@ bundle them, and their licenses are between you and their publishers.
 
 If you redistribute an installed copy of Tafreegh together with those downloaded
 files, you are redistributing them too, and their licenses apply to that copy.
-
-## Required notice
-
-PolyForm Noncommercial 1.0.0 asks anyone who redistributes the software to pass
-on this line:
-
-> Required Notice: Copyright 2026 Yossef Ismail

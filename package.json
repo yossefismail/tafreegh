@@ -4,7 +4,7 @@
   "version": "0.9.9",
   "description": "Tafreegh â€” Arabic voice-to-text studio with speaker diarization and AI summaries.",
   "author": "Yossef Ismail",
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "MIT",
   "private": true,
   "main": "./out/main/index.js",
   "scripts": {

@@ -4,6 +4,16 @@
 
 Tafreegh (تفريغ) is a packaged Windows desktop app that turns Arabic recordings into a speaker-labelled transcript plus an AI summary, and publishes the result as one self-contained HTML page. It is built with Electron 45, React 19 and TypeScript, with a Python 3.12 worker for the audio pipeline. It is not a web app: there is no Docker, no localhost server and no browser step, because the result is shown in a sandboxed iframe inside the app. Installers are an MSI and an NSIS EXE for x64, version 0.9.9. They are unsigned, so Windows SmartScreen warns on first launch.
 
+## Accuracy and use
+
+> **Tafreegh is an assistance tool, not a record of evidence.**
+
+Transcription and speaker labels are produced automatically by a speech model, so they will contain errors: misheard or dropped words, sentences attributed to the wrong speaker, approximate timestamps, and a summary that can leave out or misstate what was said. Treat the output as a first draft that helps you navigate a recording, not as a verbatim or certified transcript.
+
+Do not rely on it as a legally binding record, as evidence in legal, disciplinary, employment or official proceedings, or as a substitute for professional advice. In those settings, check every passage against the original audio and have a qualified person review the result.
+
+The software is provided "as is", without warranty of any kind. You are responsible for how you use the output.
+
 ## 100% local by default
 
 The whole audio path runs on your machine. Decoding, enhancement, diarization and transcription are executed locally, and the recording is never uploaded. There is no account, no sign-in, no telemetry and no usage reporting. After the first-run download the app works fully offline.
@@ -133,8 +143,8 @@ Download the latest release from [releases/latest](../../releases/latest).
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,085,073 B | `87C5F8A1CB30AB0D2A4150F10D02172DE5C0EE97591B18DD308AAB97DAC547BC` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,461,120 B | `4383779F60E93FE6877310895A6EF383318A6D84A5ABE4D1072A754FDE5FC005` |
+| `Tafreegh-0.9.9-setup-x64.exe` | 124,083,669 B | `4E5E4460B5394D3E82D079C35308A816CB93686187F8190C09426A16205F0D10` |
+| `Tafreegh-0.9.9-setup-x64.msi` | 131,436,544 B | `D3C39F6D682524AE34C664CFFFB0A6A762FB539D9E00028AE903ACDACB769B55` |
 
 The install is per-user and needs no administrator rights. The installer is unsigned: if SmartScreen shows "Windows protected your PC", choose More info, then Run anyway.
 
@@ -218,13 +228,8 @@ Tests: the backend uses pytest, the renderer and main process use Vitest, and en
 
 ## License
 
-Tafreegh is **source-available**, not OSI open source. It is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE), copyright 2026 Yossef Ismail.
+MIT, copyright 2026 Yossef Ismail. See [LICENSE](LICENSE).
 
-- **Allowed, free of charge:** personal use, study, research, hobby projects, and use by charities, schools, public research bodies, public health and safety organisations, and government institutions. You may read the source, change it, and share your changes.
-- **Not allowed:** commercial use, meaning anything intended for or directed toward commercial advantage or monetary compensation. That includes selling the app, bundling it into a paid product, or using it to deliver paid work.
-- **If you redistribute it,** including a modified build, you must pass on the licence and the line `Required Notice: Copyright 2026 Yossef Ismail`.
-- **Commercial licence:** if you need one, open an issue at [github.com/yossefismail/tafreegh](https://github.com/yossefismail/tafreegh/issues) and we can agree terms separately.
-
-This is a deliberate choice: the code is public so it can be read, audited and improved, while the project keeps the right to be paid for commercial use. It also means package repositories that require an OSI-approved licence will not accept it.
+You can use it commercially, change it, and redistribute it, including a closed-source fork, as long as the copyright notice and permission notice stay with it. There is no warranty, and the accuracy disclaimer above is part of using it.
 
 The bundled models keep their own licences, and Tafreegh does not redistribute them: Jais-ASR is Apache 2.0 ([model card](https://huggingface.co/IFM/Jais-ASR-GGUF)) and Nemotron-3 Diarization is OpenMDW 1.1 ([model card](https://huggingface.co/nvidia/Nemotron-3-Diarization)). The fonts and llama.cpp are covered in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), and the licence files ship inside the installed app under `resources/`.
