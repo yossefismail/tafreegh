@@ -25,6 +25,8 @@ extraResources:
   # License and third-party notices travel inside the installed app.
   - from: LICENSE
     to: LICENSE.txt
+  - from: NOTICE
+    to: NOTICE.txt
   - from: THIRD-PARTY-NOTICES.md
     to: THIRD-PARTY-NOTICES.txt
   - from: licenses

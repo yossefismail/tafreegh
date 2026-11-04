@@ -143,8 +143,8 @@
 
 | الملف | الحجم | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,094,384 B | `25E49EA1B9738F63095A21B772BB3B2AB9E4CCFE0AE90EB26007D0FD2058A221` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,457,024 B | `C35E836B47F5FC7960005CF7B2A3CCADAC25F0B5D8B589511172300C31813B4D` |
+| `Tafreegh-0.9.9-setup-x64.exe` | 124,094,838 B | `AFD233BE871EAFABFDA95FA3BED320C3EAAD9C8D3747AE3CB55E95C1C103CB1D` |
+| `Tafreegh-0.9.9-setup-x64.msi` | 131,465,216 B | `B443D18C41942C1559B90EDD27CBC244B97B9C1CA3B90862B4709B50EB1EB14C` |
 
 التثبيت للمستخدم الحالي ولا يحتاج صلاحيات مدير. المثبِّت غير موقَّع: إذا ظهر تحذير SmartScreen «Windows protected your PC» فاختر More info ثم Run anyway.
 
