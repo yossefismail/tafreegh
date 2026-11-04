@@ -230,10 +230,4 @@ Tests: the backend uses pytest, the renderer and main process use Vitest, and en
 
 GNU AGPL-3.0, copyright (C) 2026 Yossef Ismail. See [LICENSE](LICENSE).
 
-You can use it commercially, change it, and redistribute it. The condition is copyleft: if you distribute a modified version, or run a modified version as a network service that other people use, you must make the complete corresponding source available under the same licence. Redistributing an unmodified build only needs this repository and its notices.
-
-AGPL rather than GPL because of that network clause: wrapping Tafreegh in a web service does not let you keep the changes private. Unlike a non-commercial licence, it does not stop anyone from selling the app; it stops them from selling a closed version.
-
-There is no warranty, and the accuracy disclaimer above is part of using it.
-
 The bundled models keep their own licences, and Tafreegh does not redistribute them: Jais-ASR is Apache 2.0 ([model card](https://huggingface.co/IFM/Jais-ASR-GGUF)) and Nemotron-3 Diarization is OpenMDW 1.1 ([model card](https://huggingface.co/nvidia/Nemotron-3-Diarization)). The fonts and llama.cpp are covered in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), and the licence files ship inside the installed app under `resources/`.
