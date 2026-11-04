@@ -133,8 +133,8 @@ Download the latest release from [releases/latest](../../releases/latest).
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,074,708 B | `D2C287280E00CFA54E29A0572C9B5D675ADB272B9F0FFE49FCC44251ADA8D3CC` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,497,984 B | `95ADC578C64180CFAD141DEB5685A48F7A7025338F28A58FDAA39450B842191F` |
+| `Tafreegh-0.9.9-setup-x64.exe` | 124,085,073 B | `87C5F8A1CB30AB0D2A4150F10D02172DE5C0EE97591B18DD308AAB97DAC547BC` |
+| `Tafreegh-0.9.9-setup-x64.msi` | 131,461,120 B | `4383779F60E93FE6877310895A6EF383318A6D84A5ABE4D1072A754FDE5FC005` |
 
 The install is per-user and needs no administrator rights. The installer is unsigned: if SmartScreen shows "Windows protected your PC", choose More info, then Run anyway.
 
@@ -218,6 +218,13 @@ Tests: the backend uses pytest, the renderer and main process use Vitest, and en
 
 ## License
 
-MIT, see `package.json`.
+Tafreegh is **source-available**, not OSI open source. It is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE), copyright 2026 Yossef Ismail.
 
-The bundled models keep their own licences: Jais-ASR is Apache 2.0 ([model card](https://huggingface.co/IFM/Jais-ASR-GGUF)) and Nemotron-3 Diarization is OpenMDW 1.1 ([model card](https://huggingface.co/nvidia/Nemotron-3-Diarization)).
+- **Allowed, free of charge:** personal use, study, research, hobby projects, and use by charities, schools, public research bodies, public health and safety organisations, and government institutions. You may read the source, change it, and share your changes.
+- **Not allowed:** commercial use, meaning anything intended for or directed toward commercial advantage or monetary compensation. That includes selling the app, bundling it into a paid product, or using it to deliver paid work.
+- **If you redistribute it,** including a modified build, you must pass on the licence and the line `Required Notice: Copyright 2026 Yossef Ismail`.
+- **Commercial licence:** if you need one, open an issue at [github.com/yossefismail/tafreegh](https://github.com/yossefismail/tafreegh/issues) and we can agree terms separately.
+
+This is a deliberate choice: the code is public so it can be read, audited and improved, while the project keeps the right to be paid for commercial use. It also means package repositories that require an OSI-approved licence will not accept it.
+
+The bundled models keep their own licences, and Tafreegh does not redistribute them: Jais-ASR is Apache 2.0 ([model card](https://huggingface.co/IFM/Jais-ASR-GGUF)) and Nemotron-3 Diarization is OpenMDW 1.1 ([model card](https://huggingface.co/nvidia/Nemotron-3-Diarization)). The fonts and llama.cpp are covered in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), and the licence files ship inside the installed app under `resources/`.

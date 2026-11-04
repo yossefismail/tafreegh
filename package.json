@@ -3,8 +3,8 @@
   "productName": "Tafreegh",
   "version": "0.9.9",
   "description": "Tafreegh â€” Arabic voice-to-text studio with speaker diarization and AI summaries.",
-  "author": "Tafreegh",
-  "license": "MIT",
+  "author": "Yossef Ismail",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "private": true,
   "main": "./out/main/index.js",
   "scripts": {

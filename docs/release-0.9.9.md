@@ -28,8 +28,8 @@ The installers are unsigned. Windows SmartScreen will warn on first launch: choo
 ## Verify
 
 ```
-D2C287280E00CFA54E29A0572C9B5D675ADB272B9F0FFE49FCC44251ADA8D3CC  Tafreegh-0.9.9-setup-x64.exe
-95ADC578C64180CFAD141DEB5685A48F7A7025338F28A58FDAA39450B842191F  Tafreegh-0.9.9-setup-x64.msi
+87C5F8A1CB30AB0D2A4150F10D02172DE5C0EE97591B18DD308AAB97DAC547BC  Tafreegh-0.9.9-setup-x64.exe
+4383779F60E93FE6877310895A6EF383318A6D84A5ABE4D1072A754FDE5FC005  Tafreegh-0.9.9-setup-x64.msi
 ```
 
 Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SHA256` in PowerShell.
@@ -46,3 +46,9 @@ Check a download with `Get-FileHash .\Tafreegh-0.9.9-setup-x64.exe -Algorithm SH
 - Installers are unsigned, so SmartScreen warns on first run.
 - Highlight timing in the transcript is proportional within a 30 second window, not word-accurate.
 - One transcription job at a time.
+
+## Licence
+
+Source-available under the **PolyForm Noncommercial License 1.0.0**, copyright 2026 Yossef Ismail. Personal, research, educational and other noncommercial use is free, and you may modify and share it under the same terms. Commercial use needs a separate licence.
+
+The licence and the third-party notices now ship inside the app: `resources\LICENSE.txt`, `resources\THIRD-PARTY-NOTICES.txt`, and `resources\licenses\`.

@@ -133,8 +133,8 @@
 
 | الملف | الحجم | SHA-256 |
 |---|---|---|
-| `Tafreegh-0.9.9-setup-x64.exe` | 124,074,708 B | `D2C287280E00CFA54E29A0572C9B5D675ADB272B9F0FFE49FCC44251ADA8D3CC` |
-| `Tafreegh-0.9.9-setup-x64.msi` | 131,497,984 B | `95ADC578C64180CFAD141DEB5685A48F7A7025338F28A58FDAA39450B842191F` |
+| `Tafreegh-0.9.9-setup-x64.exe` | 124,085,073 B | `87C5F8A1CB30AB0D2A4150F10D02172DE5C0EE97591B18DD308AAB97DAC547BC` |
+| `Tafreegh-0.9.9-setup-x64.msi` | 131,461,120 B | `4383779F60E93FE6877310895A6EF383318A6D84A5ABE4D1072A754FDE5FC005` |
 
 التثبيت للمستخدم الحالي ولا يحتاج صلاحيات مدير. المثبِّت غير موقَّع: إذا ظهر تحذير SmartScreen «Windows protected your PC» فاختر More info ثم Run anyway.
 
@@ -218,6 +218,13 @@ npm run dist:nsis
 
 ## الترخيص
 
-MIT، انظر `package.json`.
+«تفريغ» متاح شيفرةً (source-available) وليس مفتوح المصدر بالمعنى المعتمد لدى OSI. رخصته [PolyForm Noncommercial License 1.0.0](LICENSE)، وحقوق النشر 2026 Yossef Ismail.
 
-النماذج المضمّنة تحتفظ بتراخيصها: Jais-ASR برخصة Apache 2.0 ([بطاقة النموذج](https://huggingface.co/IFM/Jais-ASR-GGUF))، وNemotron-3 Diarization برخصة OpenMDW 1.1 ([بطاقة النموذج](https://huggingface.co/nvidia/Nemotron-3-Diarization)).
+- **مسموح ومجانًا:** الاستخدام الشخصي والدراسة والبحث ومشاريع الهواية، واستخدام الجمعيات الخيرية والمدارس والجامعات وجهات البحث العامة وجهات الصحة والسلامة العامة والمؤسسات الحكومية. ويمكنك قراءة الشيفرة وتعديلها ومشاركة تعديلاتك.
+- **غير مسموح:** الاستخدام التجاري، أي استخدام يقصد به تحقيق ميزة تجارية أو مقابل مالي، بما في ذلك بيع التطبيق أو تضمينه في منتج مدفوع أو استخدامه لتقديم عمل مدفوع.
+- **إذا أعدت التوزيع**، بما في ذلك نسخة معدَّلة، فيجب أن تُرفق الترخيص وسطر `Required Notice: Copyright 2026 Yossef Ismail`.
+- **ترخيص تجاري:** إن احتجت إليه، افتح تذكرة في [github.com/yossefismail/tafreegh](https://github.com/yossefismail/tafreegh/issues) ونتفق على شروط منفصلة.
+
+هذا اختيار مقصود: الشيفرة علنية لتُقرأ وتُراجع وتُحسَّن، ويحتفظ المشروع بحقه في التقاضي المالي عن الاستخدام التجاري. ولهذا لا تقبلها مستودعات الحزم التي تشترط ترخيصًا معتمدًا من OSI.
+
+النماذج المضمّنة تحتفظ بتراخيصها، و«تفريغ» لا يعيد توزيعها: Jais-ASR برخصة Apache 2.0 ([بطاقة النموذج](https://huggingface.co/IFM/Jais-ASR-GGUF))، وNemotron-3 Diarization برخصة OpenMDW 1.1 ([بطاقة النموذج](https://huggingface.co/nvidia/Nemotron-3-Diarization)). أما الخطوط وllama.cpp فهي مفصَّلة في [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)، وملفات الترخيص تُثبَّت داخل التطبيق تحت `resources/`.
